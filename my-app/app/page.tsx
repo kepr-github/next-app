@@ -35,16 +35,16 @@ export default function Home() {
       <div className="space-y-3">
         <h2 className="text-center font-bold md:text-3xl dark:text-black">Announcing a free plan for small teams</h2>
 
-        <p className="text-lg text-black-800 dark:text-black-200">At preline, our mission has always been focused on bringing openness and transparency to the design process. We've always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.</p>
+        <p className="text-lg text-black-800 dark:text-black-200">At preline, our mission has always been focused on bringing openness and transparency to the design process. We ve always believed that by providing a space where designers can share ongoing work not only empowers them to make better products, it also helps them grow.</p>
       </div>
 
-      <p className="text-lg text-black-800 dark:text-black-200">We're proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
+      <p className="text-lg text-black-800 dark:text-black-200">We re proud to be a part of creating a more open culture and to continue building a product that supports this vision.</p>
 
   
 
-      <p className="text-lg text-black-800 dark:text-black-200">As we've grown, we've seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We've also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.</p>
+      <p className="text-lg text-black-800 dark:text-black-200">As we ve grown, we ve seen how Preline has helped companies such as Spotify, Microsoft, Airbnb, Facebook, and Intercom bring their designers closer together to create amazing things. We have also learned that when the culture of sharing is brought in earlier, the better teams adapt and communicate with one another.</p>
 
-      <p className="text-lg text-black-800 dark:text-black-200">That's why we are excited to share that we now have a <a className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">free version of Preline</a>, which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.</p>
+      <p className="text-lg text-black-800 dark:text-black-200">That is why we are excited to share that we now have a <a className="text-blue-600 decoration-2 hover:underline font-medium dark:text-blue-500" href="#">free version of Preline</a>, which will allow individual designers, startups and other small teams a chance to create a culture of openness early on.</p>
 
 
       <p className="text-lg text-black-800 dark:text-black-200">日本語対応</p>
