@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html>
        <head>
-        <title>サイトタイトル</title>
+        <title>My blog</title>
         </head>
       <body className={inter.className}>{children}</body>
     </html>

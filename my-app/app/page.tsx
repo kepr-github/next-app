@@ -17,32 +17,32 @@ export default function Home() {
   return (
     <div>
   <nav className="flex items-center justify-between flex-wrap bg-blue-300 p-6">
-    <div className="flex items-center flex-shrink-0 text-white mr-6">
+    <div className="flex items-center flex-shrink-0 text-black mr-6">
       <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
       <span className="font-semibold text-xl tracking-tight">My Blog</span>
     </div>
     <div className="block lg:hidden">
-      <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+      <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-black hover:border-white">
         <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
       </button>
     </div>
     <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
       <div className="text-sm lg:flex-grow">
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
           Home
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
           Portfolio
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black mr-4">
           Blog
         </a>
-        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-black">
           App
         </a>
       </div>
       <div>
-        <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
+        <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
       </div>
     </div>
   </nav>
@@ -123,7 +123,7 @@ export default function Home() {
         <span className="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
           Atlassian API
         </span>
-        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-white">
+        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-black">
           Atlassian
         </h3>
         <p className="mt-3 text-black-500 dark:text-black-500">
@@ -131,10 +131,10 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-auto flex border-t border-black-200 divide-x divide-black-200 dark:border-black-700 dark:divide-black-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View sample
         </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View API
         </a>
       </div>
@@ -163,7 +163,7 @@ export default function Home() {
         <span className="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500">
           Asana API
         </span>
-        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-white">
+        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-black">
           Asana
         </h3>
         <p className="mt-3 text-black-500 dark:text-black-500">
@@ -171,10 +171,10 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-auto flex border-t border-black-200 divide-x divide-black-200 dark:border-black-700 dark:divide-black-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View sample
         </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View API
         </a>
       </div>
@@ -194,7 +194,7 @@ export default function Home() {
         <span className="block mb-1 text-xs font-semibold uppercase text-amber-500">
           Slack API
         </span>
-        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-white">
+        <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-black">
           Slack
         </h3>
         <p className="mt-3 text-black-500 dark:text-black-500">
@@ -202,10 +202,10 @@ export default function Home() {
         </p>
       </div>
       <div className="mt-auto flex border-t border-black-200 divide-x divide-black-200 dark:border-black-700 dark:divide-black-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View sample
         </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-white dark:hover:bg-black-800" href="#">
+        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View API
         </a>
       </div>
