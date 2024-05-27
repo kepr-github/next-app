@@ -2,7 +2,7 @@
 import { useFormState } from 'react-dom'
 import { redirect } from "next/navigation";
 import axios from "axios";
-import { Auth } from 'aws-amplify'
+
 import { LambdaClient, InvokeCommand } from '@aws-sdk/client-lambda'
 
 const initialState = { message: '' }
@@ -28,18 +28,6 @@ export async function loginAction(state: any, formData: FormData) {
         //   response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
         });
 
-
-    const credentials = await Auth.currentCredentials()
-    const client = new LambdaClient({
-        credentials: Auth.essentialCredentials(credentials),
-        region: process.env.REACT_APP_LAMBDA_REGION
-    })
-    const input = {
-        FunctionName: 'some-existing-lambda-' + process.env.REACT_APP_STAGE,
-        Payload: JSON.stringify(formState)
-    }
-    const command = new InvokeCommand(input)
-    const response = await client.send(command)
 
     try {
         await axios.post(`/sample`,
