@@ -48,6 +48,7 @@ function formAction(formData: FormData){
   function Submit() {
     const status = useFormStatus();
     return (
+      <div className="m-4 flex justify-center">
         <button
         id="submit"
         className="bg-green-500 hover:bg-green-700 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -55,6 +56,7 @@ function formAction(formData: FormData){
     >
          {status.pending ? "送信中..." : "送信"}
     </button>
+    </div>
     );
   }
   
@@ -72,10 +74,10 @@ export default function TranslationPage() {
         <div >
 <div className="text-center justify-center">
 <h1 className=" m-4 text-4xl font-extrabold leading-none tracking-tight text-black-900 md:text-5xl lg:text-6xl dark:text-black ">
-AI Story Generators: Unleashing Creativity
+Inspirational Quotes
     </h1>
 <p className="m-6 text-lg font-normal text-black-500 lg:text-xl sm:px-16 xl:px-48 dark:text-black-400">
-AI story generators are software applications that utilize artificial intelligence techniques, such as natural language processing, computer vision, and generative adversarial networks, to create stories based on your inputs and preferences1. These tools can help you unleash your creativity and write original, engaging, and unique stories.
+Are you seeking wisdom, motivation, or encouragement? Look no further! Our app, “Inspirational Quotes,” delivers a daily dose of uplifting quotes from renowned thinkers, leaders, and visionaries. 
 </p>
 </div>
 
@@ -97,17 +99,18 @@ AI story generators are software applications that utilize artificial intelligen
   </div>
 </div>   */}
 
+<div className="flex justify-center">
+<textarea id="message" name="message" rows={4} className="block  p-2.5 w-1/2 text-sm text-black-900 bg-black-50 rounded-lg border border-black-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+ placeholder="困りごとを入力してね！">
 
-<textarea id="message" name="message" rows={4} className="block p-2.5 w-full text-sm text-black-900 bg-black-50 rounded-lg border border-black-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
- placeholder="Write your thoughts here...">
-
- </textarea>
-
+</textarea>
+ 
+</div>
                 <Submit />
-                <div className="m-6 text-lg font-normal text-black-500 lg:text-xl sm:px-16 xl:px-48 dark:text-black-400">
+                <div className="text-center justify-center m-20 text-lg font-normal text-black-500 lg:text-xl sm:px-16 xl:px-48 dark:text-black-400">
                     {state.message}
                     </div>
-
+                    
 
             </form>
         </div>

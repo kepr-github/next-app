@@ -95,10 +95,10 @@ export default function Home() {
           My sample app
         </span>
         <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-black">
-        AI Story Generators: Unleashing Creativity
+        Inspirational Quotes
         </h3>
         <p className="mt-3 text-black-500 dark:text-black-500">
-        AI story generators are software applications that utilize artificial intelligence techniques, such as natural language processing, computer vision, and generative adversarial networks, to create stories based on your inputs and preferences1. These tools can help you unleash your creativity and write original, engaging, and unique stories.
+        Are you seeking wisdom, motivation, or encouragement? Look no further! Our app, “Inspirational Quotes,” delivers a daily dose of uplifting quotes from renowned thinkers, leaders, and visionaries. 
         </p>
       </div>
       <div className="mt-auto flex border-t border-black-200 divide-x divide-black-200 dark:border-black-700 dark:divide-black-700">
