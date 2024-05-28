@@ -1,12 +1,13 @@
 'use client'
 import { useFormState } from 'react-dom'
+import { onFormPostAction } from "./action";
 import { redirect } from "next/navigation";
 import axios from "axios";
 
 // interface State {
 //     message: string;
 //   }
-
+import { useState } from "react";
 //   const initialState: State = { message: '' }
 
 
@@ -26,7 +27,9 @@ function formAction(formData: FormData){
         url: 'https://jbupu1xz8j.execute-api.ap-northeast-1.amazonaws.com/Prod/hello/',
       })
         .then(function (response) {
-            console.log(response.data)
+            return {
+                message: 'str',
+             }
         //   response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
         });
 
@@ -39,23 +42,46 @@ function formAction(formData: FormData){
     //     console.error(e);
     //   }
   
-    redirect("/application/translation/thanks");
+    // redirect("/application/translation/thanks");
   }
+
+function Submit() {
+    return (
+      <button type="submit" >
+        { "送信中..."}
+      </button>
+    );
+  }
+  
 // translation app　を作成する
 
 export default function TranslationPage() {
-    return (
-<form action={formAction}>
-<label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" htmlFor="file_input">Upload file</label>
-<input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" name="file" id="file_input" type="file"></input>
-<input type="password" name="password" placeholder="Password"></input>
-<p className="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">SVG, PNG, JPG or GIF (MAX. 800x400px).</p>
-<button id="submit"
-  className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-  type="submit">
-  送信
-</button>
+    // const [data, setData] = useState("");
+    // const [result, dispatch] = useFormState(postAction, {});
+    const [state, action] = useFormState(onFormPostAction, {
+        message: "",
+      });
+    const [first, setFirst] = useState("");
 
-</form>
+    return (
+        <div className="bg-gray-200">
+            <form action={action}>
+                <input
+                    className="block mb-2 text-black font-medium text-black-900 dark:text-black"
+                    type="text"
+                    name="first"
+                    value={first}
+                    onChange={(e) => setFirst(e.target.value)}
+                />
+                <button
+                    id="submit"
+                    className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="submit"
+                >
+                    送信
+                </button>
+                <div className="text-gray-700">{state.message}</div>
+            </form>
+        </div>
     );
     }

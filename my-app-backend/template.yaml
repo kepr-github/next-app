@@ -15,7 +15,6 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
-      SourceArn: arn:aws:iam::077262513103:role/service-role/AmplifySSRLoggingRole-30be06d3-f0fe-49da-8194-0bbb7216c407
       CodeUri: hello_world/
       Handler: app.lambda_handler
       Runtime: python3.9
