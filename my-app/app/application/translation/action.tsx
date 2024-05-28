@@ -8,16 +8,19 @@ type FormState = {
 
 export async function onFormPostAction(prevState: FormState, data: FormData) {
    // Process the data
-   const resp = 'ddddd'
+    console.log(data)
+   const mes = data.get('message')
+   console.log(mes)
 
    
    let res = await axios({
     method: 'get',
-    url: 'https://jbupu1xz8j.execute-api.ap-northeast-1.amazonaws.com/Prod/hello/',
+    url: 'https://s77tdveqqk.execute-api.ap-northeast-1.amazonaws.com/Prod/hello',
   })
     .then(function (response) {
         const res:string = response.data['message']
-        return {message: res}
+        let result =  mes + res ;
+        return {message: result}
     //   response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
 
   })

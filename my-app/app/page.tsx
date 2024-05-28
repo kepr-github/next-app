@@ -95,15 +95,15 @@ export default function Home() {
           My sample app
         </span>
         <h3 className="text-xl font-semibold text-black-800 dark:text-black-300 dark:hover:text-black">
-          translation
+        AI Story Generators: Unleashing Creativity
         </h3>
         <p className="mt-3 text-black-500 dark:text-black-500">
-          Translate text into different languages using the Translation API.
+        AI story generators are software applications that utilize artificial intelligence techniques, such as natural language processing, computer vision, and generative adversarial networks, to create stories based on your inputs and preferences1. These tools can help you unleash your creativity and write original, engaging, and unique stories.
         </p>
       </div>
       <div className="mt-auto flex border-t border-black-200 divide-x divide-black-200 dark:border-black-700 dark:divide-black-700">
         <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="application/translation">
-          View sample
+          go to app
         </a>
         <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-black-800 shadow-sm hover:bg-black-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-black-900 dark:border-black-700 dark:text-black dark:hover:bg-black-800" href="#">
           View API

@@ -7,6 +7,7 @@ import os
 openai.api_key = os.environ['OPENAI_API_KEY']  
 
 def lambda_handler(event, context):
+    
     """Sample pure Lambda function
 
     Parameters
@@ -33,7 +34,7 @@ def lambda_handler(event, context):
         completion = client.chat.completions.create(
             model="gpt-4",
             messages=[
-                {"role": "system", "content": "何か喋ってみてください。"},
+                {"role": "system", "content": "150字ほどで面白い物語を描いてください"},
                 {"role": "user", "content": "ランダムに文章を生成してください。"},
             ]
         )
