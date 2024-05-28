@@ -3,12 +3,14 @@ import { useFormState } from 'react-dom'
 import { redirect } from "next/navigation";
 import axios from "axios";
 
+// interface State {
+//     message: string;
+//   }
+
+//   const initialState: State = { message: '' }
 
 
-const initialState = { message: '' }
-
-
-function loginAction(state: any, formData: FormData) {
+function formAction(formData: FormData){
 
     const user_id = formData.get('file')
     const password = formData.get('password')
@@ -42,7 +44,6 @@ function loginAction(state: any, formData: FormData) {
 // translation app　を作成する
 
 export default function TranslationPage() {
-    const [state, formAction] = useFormState(loginAction, initialState)
     return (
 <form action={formAction}>
 <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-black" htmlFor="file_input">Upload file</label>
