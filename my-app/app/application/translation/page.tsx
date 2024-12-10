@@ -100,7 +100,7 @@ Are you seeking wisdom, motivation, or encouragement? Look no further! Our app, 
 </div>   */}
 
 <div className="flex justify-center">
-<textarea id="message" name="message" rows={4} className="m-6 block  p-2.5 w-1/2 text-sm text-black-900 bg-black-50 rounded-lg border border-black-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+<textarea id="message" name="message" rows={4} className="m-6 block  p-2.5 w-2/3 text-sm text-black-900 bg-black-50 rounded-lg border border-black-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-black-700 dark:border-black-600 dark:placeholder-black-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
  placeholder="困りごとを入力してね！">
 
 </textarea>
